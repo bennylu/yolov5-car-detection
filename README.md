@@ -6,6 +6,8 @@ A basic code block of detecting cars from images using YOLOv5.
 
 ![image](https://github.com/bennylu/yolov5-car-detection/blob/master/sample/t4.gif)
 
+![image](https://github.com/bennylu/yolov5-car-detection/blob/master/sample/culane.gif)
+
 
 
 ## Prepare dependencies
@@ -19,10 +21,15 @@ pip install torch torchvision torchaudio --extra-index-url https://download.pyto
 
 ## Detect cars
 
+> with images from Carla simulator
 ```
-python detect.py
+python detect-carla.py
 ```
 
+> with images from culane dataset
+```
+python detect-culane.py
+```
 
 ## Generate video
 
