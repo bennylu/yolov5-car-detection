@@ -8,12 +8,13 @@ A basic code block of detecting cars from images using YOLOv5.
 
 
 
-## Initialize conda environment
+## Prepare dependencies
 
 ```
-conda create -n yolov5 python=3.8
-conda activate yolov5
-pip install -r requirements.txt
+python -m venv venv
+. venv/bin/activate
+pip install -r requirements
+pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
 ```
 
 ## Detect cars
