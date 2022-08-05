@@ -25,3 +25,7 @@ for i in range(10000):
 
     # output
     results.display(pprint=True, save=True, save_dir=Path('output'))
+
+    # obtain raw output
+    raw_output = results.pandas().xyxy[0].to_dict(orient = 'records')
+    print(raw_output)
